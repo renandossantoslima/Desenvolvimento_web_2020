@@ -1,0 +1,15 @@
+@font-face {
+	font-family: "Madelina Script";
+	src: url("../fontes/MadelinaScript.woff");
+}
+
+@font-face {
+	font-family: "Bring Heart";
+	src: url("../fontes/BringHeart.woff");
+}
+
+h1 {
+	font-size: 6em;
+	font-family: "Bring Heart";
+}
+

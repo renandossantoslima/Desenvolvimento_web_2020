@@ -1,0 +1,30 @@
+.conteudo {
+	background: #dcdcdc;
+	height: 600px;
+	display: flex;
+
+	/*
+	row | row-reverse | column | column-reverse
+	*/
+	flex-direction: row;
+
+
+	/*
+	nowwrap | wrap | wrap-reverse */
+	flex-wrap: nowrap;
+
+	/*
+	flex-start|flex-end|center|space-between|space-around*/
+	justify-content: space-around;
+
+	/*
+	stretch|center|flex-start|flex-end|baseline*/
+	align-items: baseline;
+}
+
+.item {
+	
+	margin: 10px;
+	background: white;
+	border: 1px solid gray;
+}

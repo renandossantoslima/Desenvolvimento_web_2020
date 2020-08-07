@@ -1,0 +1,25 @@
+/*.pagina p {
+	color: blue;
+}
+
+.pagina p {
+	color: red;
+}*/
+
+
+
+
+/*Seletor mais especifico que o outro
+a regra mais especifica será aplicada*/
+
+* {
+	color: red;
+}
+
+h2 {
+	color: blue;
+}
+
+h2.verde{
+	color: green;
+}

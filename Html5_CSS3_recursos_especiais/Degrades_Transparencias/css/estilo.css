@@ -1,0 +1,11 @@
+.caixa{
+	width: 300px;
+	height: 300px;
+	/*background: url('../imagens/camera.png');*/
+	/*background: linear-gradient(100deg, red,green, yellow);*/
+	background: radial-gradient(red, green);
+}
+
+.caixa h1 {
+	/*background: rgba(255,255,255, 0.5);/* rgba serve para colocar um transparêcia vai de 0 até 1*/
+}

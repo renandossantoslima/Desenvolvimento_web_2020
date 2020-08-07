@@ -1,0 +1,34 @@
+/*netflix*/
+
+
+var video = Array();
+
+video[1] = Array();
+video[1]['nome'] = 'naruto';
+video[1]['categoria'] = 'anime';
+
+function getVideo(video){
+	//logica
+
+	try {
+		console.log(video[0]['nome']);
+	} catch (e) {
+		tratarErro(e);
+		console.log('Agora sim podemos tratar esse erro');
+		throw new Error('Houve um erro mas não se preocupe');
+	} finally{
+		console.log('Sempre passa por aqui (try / catch)');
+	}
+	
+
+	console.log('A aplicação não morreu.');
+
+}
+
+
+function tratarErro(e){
+	//logica
+	console.log(e);
+}
+
+getVideo(video);

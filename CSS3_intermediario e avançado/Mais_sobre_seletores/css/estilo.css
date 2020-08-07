@@ -1,0 +1,43 @@
+/** {
+	border: 1px solid red;
+}*/
+
+
+
+
+
+
+
+
+/*Seletor de class*/
+/*.verde {
+	color: green;
+}
+
+p.verde {
+	color: blue;
+}*/
+
+
+/*Seletor de filho*/
+li>a {
+	color: red;
+	text-decoration: none;
+}
+
+
+/*Seletor descendente
+p a {
+	color: green;
+}*/
+
+/*Seletor de imão adjacente
+h1+p {
+	color: red;
+}*/
+
+/*Seletor de irmão geral*/
+h1~p {
+	color: pink;
+}
+

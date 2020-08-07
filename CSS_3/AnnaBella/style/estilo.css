@@ -1,0 +1,39 @@
+body {
+	background-image: url('../imagens/fundo.png');
+	background-color: #d2d2c1;
+	font: 16px, "Times New Romam", Times, serif;;
+}
+
+.principal {
+	width: 900px;
+}
+
+.links {
+	background: #c5c5b2;
+	padding: 15px;
+}
+
+a {
+	color: #4b566a;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+h1 {
+	color: #828271;
+	font-size: 1.2em;
+}
+
+.sobre {
+	background: #e8e8d9; 
+	padding: 10px;
+}
+
+.rodape {
+	text-align: center;
+}
+
+.foto {
+	border: 5px solid gray;
+	margin: 5px;
+}
