@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Template string - javascript moderno</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+
+
+		
+		<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+		<script type="text/babel">
+			
+			let nome = 'Jorge';
+
+			//console.log('Oi' + nome);
+			//tenho que coloca-lo dentro de crase
+			console.log(`Oi ${nome}, tudo bem?`);
+
+			//quebra de linhas
+			/*console.log(`Oi
+			 ${nome}, tudo bem?`);*/
+
+			/* console.log(`7 + 7 = ${7+7}`);*/
+
+			function calcular(x,y){
+				return x * y;
+			}
+
+			console.log(`A multiplicação de 8 x 8 é igual ${calcular(8,8)}`);
+
+
+		</script>
+
+
+		
+	</body>
+</html>

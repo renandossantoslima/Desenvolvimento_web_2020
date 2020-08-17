@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Funções factory - javascript moderno</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+
+
+		
+		<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+		<script type="text/babel">
+
+
+			//requisição http
+			//resposta http
+			let Bicibleta1 = {
+				cor: 'branca',
+				marcha:'unica',
+				arco: 12,
+				pedalar(){
+					console.log('Metodo pedalar executado');
+				}
+			};
+
+			
+
+			let Bicibleta2 = {
+				cor: 'preta',
+				marcha:'18',
+				arco: 26,
+				pedalar(){
+					console.log('Metodo pedalar executado');
+				}
+			};
+
+			console.log(Bicibleta1);
+			console.log(Bicibleta2);
+
+
+			//------------------------------
+			let BicicletaFactory = function(cor,marcha,aro) {
+				return {
+					cor,
+					marcha,
+					aro,
+					tipoPedal,
+					pedalar(){
+						console.log('Metodo pedalar executado');
+					}
+				}
+			};
+
+			let Bicibleta3 = BicicletaFactory('vermelha','18',26);
+			console.log(Bicibleta3);
+
+			console.log(Bicibleta3.cor);
+			Bicibleta3.pedalar();
+
+			
+		</script>
+
+
+		
+	</body>
+</html>

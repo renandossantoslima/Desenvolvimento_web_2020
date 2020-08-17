@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Funções arrow function - javascript moderno</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+
+
+		
+		<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+		<script type="text/babel">
+			
+			/*let quadrado = function(x = 0){
+				return x * x;
+			}*/
+
+			/*let quadrado = (x) => {
+				return x * x;
+			}
+
+			var valor = y => y * y;//return implicito*/
+
+			/*let parOuImpar = function(numero){
+
+				if (numero % 2 == 0){
+					return 'par';
+				}else{
+					return 'impar';
+				}
+			}*/
+
+			/*let parOuImpar = numero => {
+
+				if (numero % 2 == 0){
+					return 'par';
+				}else{
+					return 'impar';
+				}
+			}*/
+
+			let parOuImpar = numero => numero % 2 == 0 ? 'par' : 'impar';
+
+			document.write(parOuImpar(7));
+
+
+		</script>
+
+
+		
+	</body>
+</html>

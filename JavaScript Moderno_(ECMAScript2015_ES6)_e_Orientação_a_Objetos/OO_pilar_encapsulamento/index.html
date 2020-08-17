@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>OO - pilar do encapsulamento - javascript moderno</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+
+
+		
+		<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+		<script type="text/babel">
+			
+			class Tv {
+				constructor(){
+					this._relecaoCanais = Array(2,4,5,7,10);
+					this._canalAtivo = 5;
+					this._volume = 5;
+				}
+
+				//gettres e setters
+				get canalAtivo(){
+					return this._canalAtivo;
+				}
+
+				set canalAtivo(canal){
+					let x = this._relecaoCanais.indexOf(canal);
+					if (x !== -1){
+						this._canalAtivo = canal;
+					}
+					
+				}
+			}
+
+			let tv = new Tv();
+
+			tv.canalAtivo = 7;
+			console.log(tv.canalAtivo);
+
+
+		</script>
+
+
+		
+	</body>
+</html>

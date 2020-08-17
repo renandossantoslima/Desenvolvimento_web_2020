@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Objetos literais melhorias de notação - javascript moderno</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+
+
+		
+		<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+		<script type="text/babel">
+
+			let nome = 'Renan';//document.getElementById
+			let idade = 20;
+			let sexo = 'masculino';
+			let profissao = 'Tecnologo';
+
+
+			let objeto = {
+				nome: nome,
+				idade: idade,
+				sexo: sexo,
+				profissao: profissao,
+				exibirResumo: function(){
+					console.log(`${this.nome} tem ${this.idade} anos, sexo: ${this.sexo} e trabalha como ${this.profissao}`);
+				}
+			};
+
+			console.log(objeto);
+			objeto.exibirResumo();
+
+			let objeto2 = {
+				nomeTeste: nome,//nome= nome variavel / valor = valor variavel
+				idade,
+				sexo,
+				profissao,
+				exibirResumo(){
+					console.log(`${this.nomeTeste} tem ${this.idade} anos, sexo: ${this.sexo} e trabalha como ${this.profissao}`);
+				}
+			};
+
+			console.log(objeto2);
+			objeto2.exibirResumo();
+
+			
+		</script>
+
+
+		
+	</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Destructuring assignment - objeto - juntar/separar - javascript moderno</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+
+
+		
+		<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+		<script type="text/babel">
+
+			let produto = {
+				descricao: 'Notebook',
+				preco: 1800,
+				detalhes: {
+					fabricante: 'abc',
+					modelo: 'xyz'
+				}
+			};
+
+			//token
+			//array => []
+			// objeto => {}
+
+			//let {descricao, preco} = produto;
+
+
+			//let {descricao: d, preco: p} = produto;
+
+			//let {descricao, preco,desconto} = produto;
+
+			//let {descricao: d, preco: p = 2000,desconto = 5} = produto;
+
+			let { detalhes: {fabricante: f,modelo = 'Não informado'}} = produto;
+			console.log(f,modelo);
+
+
+
+
+		</script>
+		
+
+
+		
+	</body>
+</html>

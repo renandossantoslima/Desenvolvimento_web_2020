@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Destructuring assignment - juntar/separar - javascript moderno</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+
+
+		
+		<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+		<script type="text/babel">
+
+			//destructuring
+
+			let frutas = Array('Abacaxi','Uva','Pera','Mamão');
+
+			//let [ a,b, ,c ] = frutas;//pular um indice
+
+			let [a,b = 'Abacate',c,d,e = "Banana"] = frutas;
+
+			//console.log(a,b,c,d,e);
+
+			let coisas = [['Abacaxi','Uva','Pera','Mamão'], ['José','Maria']];
+
+			let [,[,n2]] = coisas;
+			let [[, , p],] = coisas;
+
+			//console.log(n2);
+			console.log(p);
+
+			
+		</script>
+		
+
+
+		
+	</body>
+</html>

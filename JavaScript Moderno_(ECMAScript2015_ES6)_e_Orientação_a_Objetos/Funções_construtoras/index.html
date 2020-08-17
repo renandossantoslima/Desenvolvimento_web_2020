@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Funções construtoras - javascript moderno</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+
+
+		
+		<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+		<script type="text/babel">
+
+			let Carro = function(){
+				this.cor = 'amarelo';
+				this.modelo = 'Chevette';
+				this.velocidadeAtual = 0;
+				this.velocidadeMaxima = 180;
+
+
+				this.acelerar = function(){
+					//this.velocidadeAtual += 10;
+
+					let velocidade = this.getVelociadeAtual() + 10;
+					this.setVelociadeAtual(velocidade); 
+				}
+
+				this.getVelociadeAtual = function(){
+					return this.velocidadeAtual;
+				}
+
+				this.setVelociadeAtual = function(velocidadeAtual){
+					this.velocidadeAtual = velocidadeAtual;
+				}
+			};
+
+			let carro = new Carro();
+
+			console.log('A velocidade atual é: ' + carro.getVelociadeAtual());
+
+			carro.acelerar();
+
+			console.log('A velocidade atual é: ' + carro.getVelociadeAtual());
+			
+		</script>
+
+
+		
+	</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Operador rest/spread - juntar/separar - javascript moderno</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+
+
+		
+		<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+		<script type="text/babel">
+
+			//contesto spread
+			let tituloArtigo = 'Como utilizar o operador rest/spread';
+
+			console.log(tituloArtigo);
+			console.log(...tituloArtigo);
+			console.log([...tituloArtigo]);
+
+
+			//arrays spread
+			let listacursos1 = Array('Node JS e MongoDB','ES6');
+			var listacursos2 = ['Multiplataforma','Introdução ao Linux'];
+			let listacursosCompleto = ['Web','Android Completo',...listacursos1,...listacursos2];
+
+			console.log(listacursosCompleto);
+
+			//objetos
+			let pessoa = {nome: 'João',idade:27};
+			let clone = {endereco: 'Rua Abc', ...pessoa}
+
+			console.log(clone);
+
+			
+		</script>
+		
+
+
+		
+	</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Funções parametros default - javascript moderno</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+
+
+		
+		<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+		<script type="text/babel">
+			
+			function contarUmaHistoria(personagem = 'Fubá', atividade= 'correr no parque', dono = 'João'){
+				document.write(`Era uma vez um cachorro ${personagem}, ele adorava fazer ${atividade} e o seu dono é ${dono}.`);
+			}
+
+			contarUmaHistoria(undefined,'enterar ossos','Pedro');
+
+
+		</script>
+
+
+		
+	</body>
+</html>
